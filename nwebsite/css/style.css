@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://level7salonatl.com/wp-content/uploads/2023/04/rewards-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    background: #c59d5f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    background: #a3824d;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #c59d5f;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #a3824d;
+}
+
+.cta-button {
+    margin-top: 40px;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services, .contact {
+    background: #f8f8f8;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+.stylists {
+    background: linear-gradient(to right, #000000, #feb47b); /* Example gradient */
+}
+
+.stylists p{
+  color: white;
+}
+
+.contact {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack the heading on top of the bubbles */
+    align-items: center; /* Center the heading horizontally */
+    padding: 60px 20px;
+    background: #f8f8f8;
+    color: #333;
+    text-align: center; /* Center text in the section */
+}
+
+.contact h2 {
+    font-size: 2.5rem; /* Adjust font size for prominence */
+    margin-bottom: 30px; /* Add space below the heading */
+}
+
+.contact .contact-details {
+    display: flex; /* Enable flexbox for the contact details */
+    gap: 20px; /* Add space between the bubbles */
+    justify-content: flex-start; /* Align the bubbles to the left */
+    width: 100%; /* Make sure the container takes the full width */
+    max-width: 100%; /* Ensure it stretches across the section */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    padding-bottom: 20px; /* Optional padding at the bottom */
+}
+
+.contact p {
+    background: #c59d5f; /* Set the background color of the bubbles */
+    color: white; /* Text color inside the bubbles */
+    padding: 20px 30px;
+    border-radius: 30px; /* Create rounded bubbles */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    display: inline-block;
+    max-width: 300px; /* Set a max width for each bubble */
+    text-align: center; /* Center text inside each bubble */
+}
+/*              Unused code
+.contact {
+    text-align: center;
+
+}
+
+
+
+
+
+*/
+/* Stylists page */
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #c59d5f;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.head-stylists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+}
+
+.head-stylist {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+}
+
+.head-stylist:hover {
+    transform: scale(1.05);
+}
+
+.head-stylist img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #c59d5f;
+}
+
+.head-stylist h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.head-stylist p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Location Page */
+.location {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.location .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.location-content p,
+.location-content ul {
+    background: #fff3e6;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.location-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.location-content li {
+    margin-bottom: 10px;
+}
+
+.location-content p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.map-container {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+}
